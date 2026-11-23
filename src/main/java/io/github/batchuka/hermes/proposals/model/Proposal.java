@@ -1,6 +1,9 @@
 package io.github.batchuka.hermes.proposals.model;
 
 import java.math.BigDecimal;
+import java.util.List;
+
+
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -11,5 +14,6 @@ public record Proposal(
 		String farmer,
 		String equipment,
 		BigDecimal amount,
-		int termMonths) {
+		int termMonths,
+		List<ProposalDocument> documents) {
 }
