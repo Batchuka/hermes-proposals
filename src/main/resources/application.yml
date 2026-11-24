@@ -3,3 +3,6 @@ spring:
     name: proposals
   mongodb:
     uri: mongodb://localhost:27017/proposals
+  jackson:
+    deserialization:
+      use-big-decimal-for-floats: true
